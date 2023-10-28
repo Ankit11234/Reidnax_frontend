@@ -2,13 +2,14 @@ import * as React from "react";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { Link } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 
 export const mainListItems = (
   <React.Fragment>
-      <a style={{textDecoration:'none',color:'black'}} href="/dashboard">
+    <Link style={{textDecoration:'none',color:'black'}} to="/dashboard">
     <ListItemButton>
       <ListItemIcon>
         <DashboardIcon />
@@ -16,8 +17,8 @@ export const mainListItems = (
 
       <ListItemText primary="Analytics" />
     </ListItemButton>
-      </a>
-        <a style={{textDecoration:'none',color:'black'}} href="/data"  >
+    </Link>
+    <Link style={{textDecoration:'none',color:'black'}} to="/data" >
     <ListItemButton>
         <ListItemIcon>
           <ShoppingCartIcon />
@@ -25,7 +26,7 @@ export const mainListItems = (
 
          <ListItemText primary="Data" />
     </ListItemButton>
-      </a>
+    </Link>
   
   </React.Fragment>
 );

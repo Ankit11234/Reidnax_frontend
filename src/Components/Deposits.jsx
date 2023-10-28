@@ -17,7 +17,7 @@ export default function Deposits() {
   useEffect(()=>{
     const getData=async()=>{
       try {
-        const res= await axios.get(`${BASE_URL}/api`);
+        const res= await axios.get(`${BASE_URL}api`);
         const data = await res.data;
         console.log("base url is",BASE_URL)
         setData(data.analytic);

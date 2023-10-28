@@ -22,7 +22,7 @@ export default function Orders() {
   useEffect(()=>{
     const getData=async()=>{
       try {
-        const res= await axios.get(`${BASE_URL}/api/data`);
+        const res= await axios.get(`${BASE_URL}api/data`);
         const data = await res.data;
         console.log("data is order.js",data.data);
         setDatas(data.data);
